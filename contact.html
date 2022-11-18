@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="script.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<title>New India Pest Control</title>
 	</head>
 	<body class="site">
@@ -47,20 +48,20 @@
 				</header>
 				<section class="form">
 					<div class="contact-form">
-						<form method="post">
+						<form action="https://formsubmit.co/49b1d182b03785482645a97cea272ecb" method="POST">
 							<div class="name">
 								<label for="name">Full Name</label>
-								<input type="text" name="name" id="name" />
+								<input type="text" name="name" id="name" required />
 							</div>
 
 							<div class="email">
 								<label for="email">Email Address</label>
-								<input type="email" name="email" id="email" />
+								<input type="email" name="email" id="email" required />
 							</div>
 
 							<div class="subject">
 								<label for="subject">Subject</label>
-								<select name="subject" id="subject">
+								<select name="subject" id="subject" required>
 									<option value="">Choose...</option>
 									<option value="general-inquiry">General Query</option>
 									<option value="estimate-inquiry">Estimate Query</option>
@@ -70,11 +71,13 @@
 
 							<div class="message">
 								<label for="message">Message / Project Description</label>
-								<textarea name="message" id="message" cols="30" rows="10"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" placeholder="Comment" required></textarea>
 							</div>
-
+							<input type="hidden" name="_captcha" value="false" />
+							<input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html" />
+							<!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
 							<div class="submit">
-								<button class="btn-submit" type="submit">Get Estimate/</button>
+								<button class="btn-submit" type="submit">Get Estimate</button>
 							</div>
 						</form>
 					</div>
@@ -209,8 +212,9 @@
 		<!-- End of .footer-article -->
 
 		<!-- Start of script for google map -->
-		<script src="emailScript.js"></script>
-		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv1P-9F9b28fXBEuf95r47abzT4zYDY5A&callback=initMap&v=weekly" async></script> -->
+		<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script src="emailScript.js"></script> -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv1P-9F9b28fXBEuf95r47abzT4zYDY5A&callback=initMap&v=weekly" async></script>
 		<!-- End of script for google map -->
 	</body>
 </html>

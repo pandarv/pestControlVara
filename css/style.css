@@ -1013,3 +1013,42 @@ Services
 		margin-block-end: 2rem;
 	}
 }
+
+/*-------------------------------------------------------
+Thank you Modal
+--------------------------------------------------------*/
+
+.modal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Content/Box */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin-inline: 1rem;
+	/* margin: 15% auto; 15% from the top and centered */
+	padding: 4rem 8rem;
+	border: 1px solid #888;
+	text-align: center;
+	width: max-content; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h2 {
+	margin-bottom: 2rem;
+}
+
+.btn-position {
+	display: block;
+	margin-inline: auto;
+}
+
+.btn-position .btn-prim {
+	margin-bottom: 0;
+	margin-top: 4rem;
+}
